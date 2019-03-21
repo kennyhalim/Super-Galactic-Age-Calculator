@@ -8,6 +8,7 @@ export default class Shop {
     this.item.set("body armor", 200);
     this.item.set("head armor", 100);
     this.item.set("sword", 400);
-    this.item.set("healthpotion", 50);
+    this.item.set("wand", 400);
+    this.item.set("healthpotion", 500);
   }
 }

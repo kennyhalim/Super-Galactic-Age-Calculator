@@ -3,7 +3,11 @@ body {
   color: green;
 }
 
-#game {
+#warriorchar {
+  display: none;
+}
+
+#wizardchar {
   display: none;
 }
 
@@ -21,6 +25,29 @@ body {
   background-size: cover;
   min-height: 100%;
   min-width: 1024px;
-
-
 } 
+
+#warriorchar img {
+  height: 500px;
+  width: 450px;
+  float: left;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 8px;
+}
+
+#wizardchar img {
+  height: 450px;
+  width: 550px;
+  float: left;
+}
+
+#shop2 img {
+  height: 30px;
+  width: 40px;
+}
+
+#shop1 img {
+  height: 30px;
+  width: 40px;
+}

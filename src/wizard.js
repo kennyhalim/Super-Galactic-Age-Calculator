@@ -1,18 +1,18 @@
 import  Monster from './../src/monster';
 import  Shop from './../src/shop';
-export default class Warrior {
+export default class Wizard {
   constructor() {
     this.health = 100;
-    this.strength = 5;
+    this.intelligence = 5;
     this.level = 1;
     this.damage = 5;
     this.items = [];
     this.bodyArmor = false;
-    this.swordEquipped = false;
+    this.wandEquipped = false;
     this.money = 1000;
     this.gameOver = false;
   }
-
+  
   fight() {
     let monsters = [];
     for(let i = 0;i < this.level;i++){
@@ -39,7 +39,7 @@ export default class Warrior {
   levelUp() {
     this.health = 100;
     this.level += 1;
-    this.strength += 2;
+    this.intelligence += 2;
     this.damage += 3;
     this.money += 200;
   }
@@ -48,17 +48,17 @@ export default class Warrior {
     this.health = 100;
     this.level -= 1;
     this.damage += 1;
-    this.strength += 1;
+    this.intelligence += 1;
     this.gameOver = false;
   }
-  
+
   buyItem(newitem) {
     let shop = new Shop();
     let cost = shop.item.get(newitem);
     this.items.push(newitem);
     this.money = this.money - cost;
   }
-  
+
   usePotion(){
     if(this.items.includes("healthpotion")){
       this.health += 20;
@@ -68,11 +68,11 @@ export default class Warrior {
       alert("potion not found");
     }
   }
-  
+
   useBodyArmor() {
     if(this.bodyArmor === false){
       if(this.items.includes("body armor")){
-        this.strength += 5;
+        this.intelligence += 5;
         this.bodyArmor = true;
         var indexOfBodyArmor = this.items.indexOf("body armor");
         this.items.splice(indexOfBodyArmor,1);
@@ -82,40 +82,39 @@ export default class Warrior {
     }
     
   }
-  
+
   removeBodyArmor(){
     if(this.bodyArmor === true){
-      this.strength -= 5;
+      this.intelligence -= 5;
       this.bodyArmor = false;
       this.items.push("body armor");
     } else {
       return false;
     }
   }
-  
-  useSword() {
-    if(this.swordEquipped === false){
-      if(this.items.includes("sword")){
-        this.strength += 10;
-        this.swordEquipped = true;
-        var indexOfSword = this.items.indexOf("sword");
-        this.items.splice(indexOfSword,1);
+
+  useWand() {
+    if(this.wandEquipped === false){
+      if(this.items.includes("wand")){
+        this.intelligence += 10;
+        this.wandEquipped = true;
+        var indexOfWand = this.items.indexOf("wand");
+        this.items.splice(indexOfWand,1);
       }
     } else {
       return false;
     }    
   }
-  
-  removeSword() {
-    if(this.swordEquipped === true){
-      this.strength -= 10;
-      this.swordEquipped = false;
-      this.items.push("sword");
+
+  removeWand() {
+    if(this.wandEquipped === true){
+      this.intelligence -= 10;
+      this.wandEquipped = false;
+      this.items.push("wand");
     } else {
       return false;
     }
   }
-  
-  
-}
 
+
+  }
