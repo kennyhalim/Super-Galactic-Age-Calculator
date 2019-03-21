@@ -1,7 +1,26 @@
 body {
-  background-color: #7FDBFF;
+
+  color: green;
 }
 
-#result {
+#game {
   display: none;
 }
+
+#gameOver {
+  display: none;
+}
+
+ .bg {
+  background-image: url('https://cdn.theatlantic.com/assets/media/img/photo/2018/11/2018-national-geographic-photo-cont/n10_177694712953351/main_900.jpg?1542139084');
+
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  min-width: 1024px;
+
+
+} 

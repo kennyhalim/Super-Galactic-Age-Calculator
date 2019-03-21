@@ -2,11 +2,37 @@
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <title>Haiku Checker</title>
+  <title>RPG</title>
 </head>
-<body>
+<body class="bg">
   <div class="container">
+    <h1> Welcome to this RPG Game</h1>
+    
+    <h3> Pick a character to start</h3>
+    <div id="intro">
+      <form id="pickCharacter">
+        <select id="character">
+          <option value="warrior">Warrior</option>
+          <img src="https://vignette.wikia.nocookie.net/streetfighter/images/0/04/Alex.png/revision/latest?cb=20140127024802&path-prefix=pt-br">
+          
+        </select>
+        <button type="submit" class="btn btn-success">Start game!</button>
+      </form>
+    </div>
+    <div id="game">
+      <h2 id="charactertype"></h2>
+      <h4 id="health"></h4>
+      <h4 id="level"></h4>
+      <h4 id="strength"></h4>
+      <h4 id="items"></h4>
   
+      <button type="button" class="btn btn-primary" id="fight">Fight monsters</button>  
+    </div>
+    <div id="gameOver">
+      <h2>Sorry your character died..</h2>
+      <button type="button" class="btn btn-primary" id="revive">Revive your character</button>
+      <button type="button" class="btn btn-warning" id="menu">Back to main menu</button>
+    </div>
   </div>
 </body>
 </html>
