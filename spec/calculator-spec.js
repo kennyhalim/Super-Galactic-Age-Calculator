@@ -24,5 +24,18 @@ describe('Calculator', function() {
     expect(newCalc.day).toEqual(22);
   });
 
-  
+  it('should get the correct age', function() {
+    expect(newCalc.getAge()).toEqual(20);
+  });
+
+  it('should get the correct age with same month', function() {
+    var newAge = new Calculator("1998-03-25");
+    expect(newAge.getAge()).toEqual(20);
+  });
+
+  it('should get the correct age with same month and day', function() {
+    var newAge = new Calculator("1998-03-22");
+    expect(newAge.getAge()).toEqual(21);
+  });
+
 });
