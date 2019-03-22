@@ -6,6 +6,17 @@ export default class Calculator {
     this.day = parseInt(birthDate.substr(8,2));
   }
 
-  
+  getDay() {
+    return this.day;
+  }
 
+  getMonth() {
+    return this.month;
+  }
+
+  getYear() {
+    return this.year;
+  }
+
+  
 }
