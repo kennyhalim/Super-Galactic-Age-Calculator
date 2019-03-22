@@ -32,22 +32,22 @@ export default class Calculator {
   }
 
   getAgeInMercury() {
-    alert(this.getAge() * 0.24);
+    console.log(this.getAge() * 0.24);
     return this.getAge() * 0.24;
   }
 
   getAgeInVenus() {
-    alert(this.getAge() * 0.62);
+    console.log(this.getAge() * 0.62);
     return this.getAge() * 0.62;
   }
 
   getAgeInMars() {
-    alert(this.getAge() * 1.88);
+    console.log(this.getAge() * 1.88);
     return this.getAge() * 1.88;
   }
 
   getAgeInJupiter() {
-    alert(this.getAge() * 11.86);
+    console.log(this.getAge() * 11.86);
     return this.getAge() * 11.86;
   }
 
