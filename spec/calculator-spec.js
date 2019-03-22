@@ -12,4 +12,17 @@ describe('Calculator', function() {
     expect(newCalc.birthDate).toEqual(date);
   });
 
+  it('should get the correct year', function() {
+    expect(newCalc.year).toEqual(1998);
+  });
+
+  it('should get the correct month', function() {
+    expect(newCalc.month).toEqual(5);
+  });
+
+  it('should get the correct day', function() {
+    expect(newCalc.day).toEqual(22);
+  });
+
+  
 });
