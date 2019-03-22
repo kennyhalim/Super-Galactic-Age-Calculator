@@ -18,5 +18,17 @@ export default class Calculator {
     return this.year;
   }
 
-  
+  getAge() {
+    var todayDate = new Date();
+    var todayYear = todayDate.getFullYear();
+    var todayMonth = todayDate.getMonth() + 1; //starts from 0, so add 1
+    var todayDay = todayDate.getDate();
+    if(this.month > todayMonth){
+      return todayYear - this.year - 1;
+    } else if(this.month === todayMonth && this.day > todayDay){
+      return todayYear - this.year - 1;
+    }
+    return todayYear - this.year;
+  }
+
 }
