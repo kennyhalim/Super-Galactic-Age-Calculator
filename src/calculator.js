@@ -53,6 +53,9 @@ export default class Calculator {
 
   getLifeExpectancy() {
     var lifeExpectancy = 80 - (this.soda * 3) - (this.junkFood * 5) + (this.vegetables * 4) + (this.sport * 6);
+    if(this.getAge() > lifeExpectancy){
+      return -1;
+    }
     return lifeExpectancy;
   }
 
