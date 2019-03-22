@@ -38,4 +38,19 @@ describe('Calculator', function() {
     expect(newAge.getAge()).toEqual(21);
   });
 
+  it('should get the correct age in Mercury', function() {
+    expect(newCalc.getAgeInMercury()).toEqual(4.8);
+  });
+
+  it('should get the correct age in Venus', function() {
+    expect(newCalc.getAgeInVenus()).toEqual(12.4);
+  });
+
+  it('should get the correct age in Mars', function() {
+    expect(newCalc.getAgeInMars()).toEqual(37.6);
+  });
+
+  it('should get the correct age in Jupiter', function() {
+    expect(newCalc.getAgeInJupiter()).toEqual(237.2);
+  });
 });

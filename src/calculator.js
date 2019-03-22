@@ -1,9 +1,13 @@
 export default class Calculator {
-  constructor(birthDate) {
+  constructor(birthDate, soda, junkFood, vegetables, sport) {
     this.birthDate = birthDate;
     this.year = parseInt(birthDate.substr(0,4));
     this.month = parseInt(birthDate.substr(5,2));
     this.day = parseInt(birthDate.substr(8,2));
+    this.soda = soda;
+    this.junkFood = junkFood;
+    this.vegetables = vegetables;
+    this.sport = sport;
   }
 
   getDay() {
@@ -32,23 +36,23 @@ export default class Calculator {
   }
 
   getAgeInMercury() {
-    console.log(this.getAge() * 0.24);
-    return this.getAge() * 0.24;
+    return parseFloat((this.getAge() * 0.24).toFixed(1));
   }
 
   getAgeInVenus() {
-    console.log(this.getAge() * 0.62);
-    return this.getAge() * 0.62;
+    return parseFloat((this.getAge() * 0.62).toFixed(1));
   }
 
   getAgeInMars() {
-    console.log(this.getAge() * 1.88);
-    return this.getAge() * 1.88;
+    return parseFloat((this.getAge() * 1.88).toFixed(1));
   }
 
   getAgeInJupiter() {
-    console.log(this.getAge() * 11.86);
-    return this.getAge() * 11.86;
+    return parseFloat((this.getAge() * 11.86).toFixed(1));
+  }
+
+  getLifeExpectancy() {
+    var lifeExpectancy =
   }
 
 }
