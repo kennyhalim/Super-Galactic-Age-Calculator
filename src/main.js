@@ -7,7 +7,11 @@ $(document).ready(function() {
   $("#ageForm").submit(function(event){
     event.preventDefault();
     var birthday = $("#birthDate").val();
-    var newCalc = new Calculator(birthday);
+    var sodaDrank = $("#soda").val();
+    var junkFoodEaten = $("#junkfood").val();
+    var vegetablesEaten = $("#vegetables").val();
+    var sportsPlayed = $("#sport").val();
+    var newCalc = new Calculator(birthday, sodaDrank, junkFoodEaten, vegetablesEaten, sportsPlayed);
     $("#intro").hide();
     $("#result").show();
     $("#age").text("Your current age is: " + newCalc.getAge());
