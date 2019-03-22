@@ -31,4 +31,24 @@ export default class Calculator {
     return todayYear - this.year;
   }
 
+  getAgeInMercury() {
+    alert(this.getAge() * 0.24);
+    return this.getAge() * 0.24;
+  }
+
+  getAgeInVenus() {
+    alert(this.getAge() * 0.62);
+    return this.getAge() * 0.62;
+  }
+
+  getAgeInMars() {
+    alert(this.getAge() * 1.88);
+    return this.getAge() * 1.88;
+  }
+
+  getAgeInJupiter() {
+    alert(this.getAge() * 11.86);
+    return this.getAge() * 11.86;
+  }
+
 }
