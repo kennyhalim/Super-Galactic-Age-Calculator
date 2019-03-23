@@ -1,22 +1,20 @@
 
-# _RPG_
+# _Super Galactic Calculator_
 
-#### A Role Play Game, 03/20/19
+#### Super Galactic Calculator, 03/20/19
 
-#### By **Kenny Halim and Theary Im**
+#### By **Kenny Halim**
 
 ### Description
 
-_Epicodus Week 11 Class Project_
+_Epicodus Week 11 Individual Project_
 
-A game where players assume the roles of characters in a fictional world. Each character will fight monster and level up if they defeat the monster.
+A program where user can input their birthday and other things so that the program can out their age in different planets as well as their life expectancy.
 
 || Behavior  | Input  | Output  |
 |---|---|---|---|
-|1.| Player picks character  | Warrior   | Warrior |
-|2.| Player starts with level 1 |  | Level 1: Heath = 100, Strength = 5 |
-|3.| Player levels up if they defeat the monster and their strength will increase by 2  |    | Level 2: Health = 100, strength = 7  |
-|4.| Gamer over if the player's health = 0  |  | Game Over! |
+|1.| User input birthday, how many times they drink soda, how many times they eat junk food, how many times they eat vegetables and how many times they do sport  | 05/22/1998,3,3,1,4   | 20,4.8,12,4,37.6,237.2,84 |
+|2.| Player input empty field |  | doesnt allow user to input empty |
 
 ## Setup/Installation Requirements
 
@@ -31,9 +29,9 @@ _Node.js, Karma and Jasmine are required for the npm commands to run. Must have 
 5. Input npm run start to start the application.
 6. Input npm test to test the application.
 
-To run the tests, use these commands: $ cd HairSalon.Tests $ dotnet test
+To run the tests, use these commands: $ cd Super-Galactic-Age-Calculator $ npm test
 
-To run the program on chrome, use these commands: $ cd HairSalon $ dotnet build $ dotnet run
+To run the program on chrome, use these commands: $ cd Super-Galactic-Age-Calculator $ npm run start
 
 ## Known Bugs
 
@@ -42,7 +40,6 @@ _No known bugs._
 ## Support and contact details
 
  kennyhalim98@gmail.com        
- thearyim@gmail.com
 
 ## Technologies Used
 
@@ -52,4 +49,4 @@ _HTML, CSS, Bootstrap, Javascript, JQuery, Javascript WebPack, Node Package Mana
 
 *MIT License*
 
-Copyright (c) 2019 **_Kenny Halim and Theary Im_**
+Copyright (c) 2019 **_Kenny Halim_**
