@@ -1,14 +1,14 @@
 import Calculator from './../src/calculator';
 
 describe('Calculator', function() {
-  var newCalc;
+  let newCalc;
 
   beforeEach(function() {
     newCalc = new Calculator("1998-05-22",3,3,1,4);
   });
 
   it('should create a new calculator object', function() {
-    var date = "1998-05-22";
+    let date = "1998-05-22";
     expect(newCalc.birthDate).toEqual(date);
   });
 
@@ -29,12 +29,12 @@ describe('Calculator', function() {
   });
 
   it('should get the correct age with same month', function() {
-    var newAge = new Calculator("1998-03-25",3,3,3,1);
-    expect(newAge.getAge()).toEqual(20);
+    let newAge = new Calculator("1998-03-25",3,3,3,1);
+    expect(newAge.getAge()).toEqual(21);
   });
 
   it('should get the correct age with same month and day', function() {
-    var newAge = new Calculator("1998-03-22",3,3,3,1);
+    let newAge = new Calculator("1998-03-22",3,3,3,1);
     expect(newAge.getAge()).toEqual(21);
   });
 
@@ -59,7 +59,7 @@ describe('Calculator', function() {
   });
 
   it('should get the correct life expectancy if age has surpassed the life expectancy', function() {
-    var testCalc = new Calculator("1910-01-01",1,1,1,0);
+    let testCalc = new Calculator("1910-01-01",1,1,1,0);
     expect(testCalc.getLifeExpectancy()).toEqual(-1);
   });
 });

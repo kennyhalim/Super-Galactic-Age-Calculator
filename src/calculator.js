@@ -23,10 +23,10 @@ export default class Calculator {
   }
 
   getAge() {
-    var todayDate = new Date();
-    var todayYear = todayDate.getFullYear();
-    var todayMonth = todayDate.getMonth() + 1; //starts from 0, so add 1
-    var todayDay = todayDate.getDate();
+    let todayDate = new Date();
+    let todayYear = todayDate.getFullYear();
+    let todayMonth = todayDate.getMonth() + 1; //starts from 0, so add 1
+    let todayDay = todayDate.getDate();
     if(this.month > todayMonth){
       return todayYear - this.year - 1;
     } else if(this.month === todayMonth && this.day > todayDay){
@@ -52,7 +52,7 @@ export default class Calculator {
   }
 
   getLifeExpectancy() {
-    var lifeExpectancy = 80 - (this.soda * 3) - (this.junkFood * 5) + (this.vegetables * 4) + (this.sport * 6);
+    let lifeExpectancy = 80 - (this.soda * 3) - (this.junkFood * 5) + (this.vegetables * 4) + (this.sport * 6);
     if(this.getAge() > lifeExpectancy){
       return -1;
     }
